@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "source": "src/index.html",
   "scripts": {
-    "start": "concurrently \"npx tailwindcss -i ./style.css -o ./output.css --watch\" \"parcel index.html\"",
-    "build": "npm install && parcel build index.html"
+  "dev": "concurrently \"npx tailwindcss -i ./style.css -o ./output.css --watch\" \"parcel index.html\"",
+  "build": "npx tailwindcss -i ./style.css -o ./output.css && parcel build index.html"
   },
   "author": "",
   "license": "ISC",
