@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merry Christmas</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style-custom.css">
+  <!-- Thêm font Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <div class="snow-container"></div>
+  <div class="clouds">
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/webai-54992.appspot.com/o/cloud.png?alt=media&token=acc83aac-8e9c-4783-8c6f-2a2531257d38"
+      class="cloud" alt="cloud" />
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/webai-54992.appspot.com/o/cloud.png?alt=media&token=acc83aac-8e9c-4783-8c6f-2a2531257d38"
+      class="cloud" alt="cloud" />
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/webai-54992.appspot.com/o/cloud.png?alt=media&token=acc83aac-8e9c-4783-8c6f-2a2531257d38"
+      class="cloud" alt="cloud" />
+  </div>
+  <div class="santa-container">
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/webai-54992.appspot.com/o/santa.png?alt=media&token=a81ad9d6-4f75-498e-9ba4-3e28673c942f"
+      class="santa" alt="Santa" />
+  </div>
+  <div class="christmas-content">
+    <h1 class="christmas-title">Merry Christmas</h1>
+    <div class="christmas-tree">
+      <div class="tree">
+        <div class="star-top">⭐</div>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/webai-54992.appspot.com/o/pineTree.png?alt=media&token=2d82b851-6e4e-4518-a7a8-e06126b47e34"
+          class="pine-tree-img" alt="Christmas Tree" />
+        <div class="bells-container">
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="countdown">
+    <span id="days">00</span> ngày <span id="hours">00</span> giờ
+    <span id="minutes">00</span> phút <span id="seconds">00</span> giây
+  </div>
+  <button
+    class="animate-bounce  p-2 absolute bottom-4 left-4 w-16 aspect-square rounded-full overflow-hidden z-10 text-red-50">
+    <img src="./message.gif" class="w-full h-full rounded-full object-cover " />
+  </button>
+  <!-- Popup -->
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-20">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-1/2 max-w-md relative pb-12">
+      <h2 class="text-2xl font-bold text-center mb-4">Gửi gì cho tớ đi 😘</h2>
+      <form id="add-item-form">
+        <textarea id="popup-textarea" class="w-full h-32 p-2 border border-gray-300 rounded" required></textarea>
+        <button id="close-btn" type="submit"
+          class="w-8 aspect-square absolute top-2 left-1 rounded-full uppercase text-black "
+          style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">x</button>
+
+      </form>
+
+      <img src="./santa.png" alt="" class="absolute right-0 bottom-0 w-20">
+
+      <div class="w-20 aspect-square absolute bottom-0 left-1"><iframe src="https://giphy.com/embed/3o6ZtjqdcQfuno2WPK"
+          width="100%" height="100%" style="pointer-events:none;" frameBorder="0" class="giphy-embed"
+          allowFullScreen></iframe>
+      </div>
+      <button id="send-btn"
+        class="w-24 absolute bottom-2 rounded-xl h-10 bg-red-500 hover:bg-red-600 transition-all duration-500 text-white "
+        style="left: calc((100% - 6rem) /2);">Send</button>
+      <p><a href="https://giphy.com/gifs/party-fun-christmas-3o6ZtjqdcQfuno2WPK"></a></p>
+    </div>
+  </div>
+  <audio id="bgMusic" loop>
+    <source src="https://storage.googleapis.com/webai-54992.appspot.com/WeWishYouAMerryChristmas.mp3"
+      type="audio/mp3" />
+  </audio>
+  <button id="music-toggle">🔊</button>
+  <div class="fireworks-container ">
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
